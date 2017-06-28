@@ -68,6 +68,7 @@ class Auth0Lock {
         client_id: this.auth0.auth.clientId,
         refresh_token: token,
         api_type: 'app',
+        scope: 'openid email',
       }),
     }).then(response => response.json());
   }
